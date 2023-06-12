@@ -1,0 +1,152 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2023-06-11 09:46:08.369407'
+    - '2023-06-11 09:46:08.369407'
+
+---
+comments:
+  columns:
+  - id
+  - author_id
+  - post_id
+  - text
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2
+    - 1
+    - Hi Tom!
+    - '2023-06-11 19:44:45.345221'
+    - '2023-06-11 19:44:45.345221'
+  - - 2
+    - 2
+    - 5
+    - Hi am texter
+    - '2023-06-11 19:48:07.262509'
+    - '2023-06-11 19:48:07.262509'
+  - - 3
+    - 2
+    - 5
+    - Hi we wasted it
+    - '2023-06-11 19:48:18.959234'
+    - '2023-06-11 19:48:18.959234'
+  - - 4
+    - 2
+    - 5
+    - Hi we wasted the
+    - '2023-06-11 19:48:30.530180'
+    - '2023-06-11 19:48:30.530180'
+  - - 5
+    - 2
+    - 5
+    - Hi dodyy maters
+    - '2023-06-11 19:48:42.688446'
+    - '2023-06-11 19:48:42.688446'
+  - - 6
+    - 2
+    - 5
+    - Hi holllasss
+    - '2023-06-11 19:48:52.958519'
+    - '2023-06-11 19:48:52.958519'
+  - - 7
+    - 2
+    - 5
+    - Gree thois
+    - '2023-06-11 19:49:09.293125'
+    - '2023-06-11 19:49:09.293125'
+
+---
+posts:
+  columns:
+  - id
+  - author_id
+  - title
+  - text
+  - comments_counter
+  - likes_counter
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - New Title
+    - Updated text
+    -
+    -
+    - '2023-06-11 19:44:28.935646'
+    - '2023-06-11 20:06:20.026970'
+  - - 2
+    - 1
+    - Hello
+    - This is my second post
+    -
+    -
+    - '2023-06-11 19:46:36.048208'
+    - '2023-06-11 19:46:36.048208'
+  - - 3
+    - 1
+    - Hello
+    - This is my third post
+    -
+    -
+    - '2023-06-11 19:46:48.225382'
+    - '2023-06-11 19:46:48.225382'
+  - - 4
+    - 1
+    - Hello
+    - This is my forthes post
+    -
+    -
+    - '2023-06-11 19:47:02.264434'
+    - '2023-06-11 19:47:02.264434'
+  - - 5
+    - 1
+    - Hello
+    - This is another post
+    -
+    -
+    - '2023-06-11 19:47:29.532734'
+    - '2023-06-11 19:47:29.532734'
+
+---
+users:
+  columns:
+  - id
+  - name
+  - photo
+  - bio
+  - post_counter
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Tom
+    - https://unsplash.com/photos/F_-0BxGuVvo
+    - Teacher from Mexico.
+    -
+    - '2023-06-11 19:42:51.067923'
+    - '2023-06-11 19:42:51.067923'
+  - - 2
+    - Lilly
+    - https://unsplash.com/photos/F_-0BxGuVvo
+    - Teacher from Poland.
+    -
+    - '2023-06-11 19:44:13.152697'
+    - '2023-06-11 19:44:13.152697'
+  - - 3
+    - Henry
+    - httsps//
+    - Skatesr from
+    -
+    - '2023-06-12 08:33:27.980588'
+    - '2023-06-12 08:33:27.980588'
