@@ -10,3 +10,4 @@ class CreateUsers < ActiveRecord::Migration[7.0]
     add_index :users, :author_id
   end
 end
+
