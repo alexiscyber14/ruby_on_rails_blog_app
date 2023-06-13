@@ -7,7 +7,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.integer :post_counter
       t.timestamps
     end
-    add_index :users, :author_id
   end
 end
 
