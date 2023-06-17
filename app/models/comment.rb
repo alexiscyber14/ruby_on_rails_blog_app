@@ -8,7 +8,6 @@ class Comment < ApplicationRecord
     post.increment!(:comments_counter)
   end
 
-  attr_accessor :author_id
-
   validates :author_id, presence: true
+  validates :text, presence: true
 end

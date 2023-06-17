@@ -1,10 +1,10 @@
 require 'rails_helper'
 require 'securerandom'
 
-RSpec.describe Post, type: :model do
-  let(:user) { User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.') }
+describe Post, type: :model do
+  @user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
 
-  subject { Post.new(author: user, title: 'Hello', text: 'This is my first post') }
+  subject { Post.new(author: @user, title: 'Hello', text: 'This is my first post') }
 
   before { subject.save }
 
@@ -20,7 +20,7 @@ RSpec.describe Post, type: :model do
     end
 
     describe '#commentscounter' do
-      it 'should have an integer commentscounter' do
+      it 'should have an interger commentscounter' do
         subject.comments_counter = '200'
         expect(subject).to_not be_valid
       end
@@ -32,7 +32,7 @@ RSpec.describe Post, type: :model do
     end
 
     describe '#likescounter' do
-      it 'should have an integer likescounter' do
+      it 'should have an interger likescounter' do
         subject.likes_counter = '200'
         expect(subject).to_not be_valid
       end
@@ -47,7 +47,7 @@ RSpec.describe Post, type: :model do
   describe '#most_recent_comments' do
     before do
       7.times do |i|
-        Comment.create(author: user, text: "#{i} Comment", post: subject)
+        Comment.create(author: @user, text: "#{i} Comment", post: subject)
       end
     end
 
