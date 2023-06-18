@@ -20,5 +20,4 @@ class Post < ApplicationRecord
   end
 
   private :increment_user_post_count
-
 end

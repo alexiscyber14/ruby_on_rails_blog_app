@@ -6,7 +6,7 @@ RSpec.describe Comment, type: :model do
     let(:post) { Post.create(author: user, title: 'Hello', text: 'This is my first post') }
 
     subject do
-      Comment.new(author: user, text: 'Some comment', post: post)
+      Comment.new(author: user, text: 'Some comment', post:)
     end
 
     before { subject.save }
