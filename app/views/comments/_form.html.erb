@@ -1,0 +1,10 @@
+<%= form_with model: Comment, url: user_post_comments_path(@user, @post) do |form| %>
+    <div class="form-content">
+  <div class="form-control">
+    <%= form.text_area :text,placeholder: 'Add comment.....', class: "form-textarea" %>
+  </div>
+  <div class="form-submit">
+  <%= form.submit raw("&#10145;&#65039;") %>
+  </div>
+  </div>
+<% end %>

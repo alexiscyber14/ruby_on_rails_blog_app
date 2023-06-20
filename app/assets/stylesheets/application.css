@@ -297,3 +297,41 @@ li {
   width: 97%;
   font-size: 15px;
 }
+.form-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0% 1%;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px grey;
+  background-color: white;
+}
+.form-content .form-control{
+  width:100%;
+  overflow: hidden;
+}
+.form-content .form-control .form-textarea {
+  background-color: rgb(241, 241, 241);
+  padding-left: 10px;
+  border: 0px solid black;
+  padding-top: 1%;
+  margin-top: 6px;
+  width: 98%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  outline: none;
+  color: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-content .form-submit{
+  padding:0%;
+  margin-right: 1%;
+}
+.form-content .form-submit input{
+  padding: 0;
+  background-color: #02eeff;
+  border: 0px;
+  font-size: 30px;
+  margin-top: 2px;
+
+}
