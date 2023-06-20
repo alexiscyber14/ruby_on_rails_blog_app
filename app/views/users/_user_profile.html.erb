@@ -10,6 +10,7 @@
         </div>
         <div class="post-num">
         <p class="para even"><span>Number of posts:  <%= user.posts_counter %> </p>
+        <button><%= link_to "Add Post", new_user_post_path(current_user), class: "btn btn-primary" %></button>
         </div>
       </li>
       <div class="user-bio">
