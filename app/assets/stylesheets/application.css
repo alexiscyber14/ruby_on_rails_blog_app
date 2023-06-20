@@ -254,7 +254,7 @@ li {
   text-transform: capitalize;
   font-size: 16px;
   text-align: right;
-  color: purple;  
+  color: purple;
 }
 
 .index-users-ul .comments {
@@ -299,7 +299,8 @@ li {
   width: 97%;
   font-size: 15px;
 }
-.form-content{
+
+.form-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -308,14 +309,16 @@ li {
   box-shadow: 2px 2px 8px grey;
   background-color: white;
 }
-.form-content .form-control{
-  width:100%;
+
+.form-content .form-control {
+  width: 100%;
   overflow: hidden;
 }
+
 .form-content .form-control .form-textarea {
   background-color: rgb(241, 241, 241);
   padding-left: 10px;
-  border: 0px solid black;
+  border: 0 solid black;
   padding-top: 1%;
   margin-top: 6px;
   width: 98%;
@@ -325,15 +328,16 @@ li {
   color: #242424;
   font-family: Arial, Helvetica, sans-serif;
 }
-.form-content .form-submit{
-  padding:0%;
+
+.form-content .form-submit {
+  padding: 0%;
   margin-right: 1%;
 }
-.form-content .form-submit input{
+
+.form-content .form-submit input {
   padding: 0;
   background-color: #02eeff;
-  border: 0px;
+  border: 0;
   font-size: 30px;
   margin-top: 2px;
-
 }

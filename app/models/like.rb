@@ -8,7 +8,7 @@ class Like < ApplicationRecord
     post.increment!(:likes_counter)
   end
 
-  #attr_accessor :post_id
+  # attr_accessor :post_id
 
   validates :post_id, presence: true
 end

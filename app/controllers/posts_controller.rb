@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-
   def new
     @post = Post.new
-  end  
+  end
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts
@@ -19,14 +19,14 @@ class PostsController < ApplicationController
     @user = current_user
     @post = @user.posts.new(post_params)
     if @post.save
-      redirect_to user_posts_path(@user), notice: 'Post successfully created.'  
+      redirect_to user_posts_path(@user), notice: 'Post successfully created.'
     else
       render :new
     end
   end
-  
+
   private
-  
+
   def post_params
     params.require(:post).permit(:title, :text)
   end
