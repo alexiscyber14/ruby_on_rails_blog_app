@@ -1,14 +1,31 @@
-<h1><%= @post.title %></h1>
 
-<p><%= @post.text %></p>
-
-<h2>Comments:</h2>
-<ul>
+<ul class="index-users-ul">
+<li class="users-card-item three-links">
+<div class="post-h">
+<h3 class="head"> Post #<%= @post.id%> by <%= @post.author.name %></h3>
+<h3 class="head-t">&#129300comments:<%= @post.comments_counter %>, &#10084;&#65039Likes: <%= @post.likes_counter %></h3>
+</div>
+</li>
+<li class="users-card-item three-links ups">
+<p class="said-two"> &#128394;&#65039 <%= @post.text %> Styling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions first . Note: Ignore login logic, you would be using Devise in coming milestone</p>
+</li>
+<div class="comments">
+<h4>Comments:</h4>
+<% if @post.comments.any? %>
+  <ul>
   <% @comments.each do |comment| %>
-    <li>
-      <% user = User.find_by(id: comment.author_id) %>
-      <p><strong>Posted by:</strong> <%= user.name %></p>
-      <p><%= comment.text %></p>
-    </li>
-  <% end %>
+      <li>
+        <% user = User.find_by(id: comment.author_id) %>
+        <p><%= user.name %>: <span class="com"><%= comment.text %></span></p>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No comments yet.</p>
+<% end %>
+</div>
+
 </ul>
+
+
+

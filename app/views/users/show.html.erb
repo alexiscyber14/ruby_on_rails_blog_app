@@ -5,7 +5,8 @@
       <li class="users-card-item three-links">
         <%= link_to user_post_path(user_id: @user.id, id: post.id) do %>
           <h3 class="post-t <%= index.even? ? 'even' : '' %>">Post #<%= "#{index + 1}" %></h3>
-          <p>&#128394;&#65039 <%= post.text %></p>
+          <p class="said"> &#128394;&#65039 <%= post.text %> Styling is nice to have but focus on making sure everything functions first. Note: Ignore login logic, you would be using Devise in coming milestone</p>
+          <p class="likes"> &#129300comments: <%= post.comments_counter %>, &#10084;&#65039Likes: <%= post.likes_counter %></p>
         <% end %>
       </li>
     <% end %>

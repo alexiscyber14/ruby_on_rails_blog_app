@@ -100,9 +100,9 @@ font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
 position: absolute;
 right: 0;
-width: 20%;
+width: 30%;
 bottom: 0;
-margin-right: 20%;
+margin-right: 10%;
 padding-top: 40%;
 
 }  
@@ -110,7 +110,7 @@ padding-top: 40%;
 text-transform: capitalize;
 color: rgb(255, 255, 255);
 font-family:Arial, Helvetica, sans-serif;
-font-size: 30px;
+font-size: 20px;
 margin: 0;
 text-align: center;
 padding-bottom: 2%;
@@ -181,6 +181,11 @@ font-family: Arial, Helvetica, sans-serif;
 color: #434343;
 width: 97%;
 font-size: 15px;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2; /* Number of lines to show */
+-webkit-box-orient: vertical;
 }
 .index-users-ul .btn-c{
   display: flex;
@@ -211,6 +216,59 @@ box-shadow: 2px 2px 8px rgb(211, 211, 211);
   text-transform: capitalize;
   font-size: 16px;
   text-align: right;
-  color: purple;
-  
+  color: purple; 
+}
+.index-users-ul .comments{
+  background-color:white;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-left: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+.index-users-ul .comments h4{
+margin: 0;
+font-size: 13px;
+color: #595959;
+font-weight: 200;
+text-transform: capitalize;
+}
+.index-users-ul .comments p{
+  margin: 0;
+  font-size:16px;
+  color: #212121;
+  margin-top: 0.9%;
+}
+.index-users-ul .comments p span{
+  font-size: 14px;
+  color: rgb(24, 24, 24);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index-users-ul .ups{
+  margin-top: 0;
+}
+.index-users-ul .post-h{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.3% 0%;
+
+}
+.index-users-ul .post-h h3{
+  margin: 0;
+  width: 100%;
+}
+.index-users-ul .post-h .head-t{
+  margin-right: 0;
+  text-align: right;
+  padding-right: 5%;
+}
+.index-users-ul .ups .said-two{
+  font-family: Arial, Helvetica, sans-serif;
+color: #434343;
+width: 97%;
+font-size: 15px;
+
 }
