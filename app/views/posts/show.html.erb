@@ -1,1 +1,14 @@
-<h1>Placeholder text for show</h1>
+<h1><%= @post.title %></h1>
+
+<p><%= @post.text %></p>
+
+<h2>Comments:</h2>
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+      <% user = User.find_by(id: comment.author_id) %>
+      <p><strong>Posted by:</strong> <%= user.name %></p>
+      <p><%= comment.text %></p>
+    </li>
+  <% end %>
+</ul>
