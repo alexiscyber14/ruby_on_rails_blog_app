@@ -254,9 +254,7 @@ li {
   text-transform: capitalize;
   font-size: 16px;
   text-align: right;
-  color: purple;
-  background-color: red;
-  
+  color: purple;  
 }
 
 .index-users-ul .comments {
