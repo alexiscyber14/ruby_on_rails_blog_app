@@ -193,6 +193,7 @@ li {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  width: 100%;
 }
 
 .index-users-ul .three-links h3.even {
@@ -248,11 +249,14 @@ li {
 .index-users-ul .three-links .likes {
   margin-right: 5%;
   padding: 0% 1%;
+  float: right;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   font-size: 16px;
   text-align: right;
   color: purple;
+  background-color: red;
+  
 }
 
 .index-users-ul .comments {

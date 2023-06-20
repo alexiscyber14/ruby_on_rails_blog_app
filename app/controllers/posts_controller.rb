@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+
+  def new
+    @post = Post.new
+  end  
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts
@@ -15,25 +19,15 @@ class PostsController < ApplicationController
     @user = current_user
     @post = @user.posts.new(post_params)
     if @post.save
-      redirect_to @post
+      redirect_to user_posts_path(@user), notice: 'Post successfully created.'  
     else
       render :new
     end
   end
-
-  def add_like
-    @post = Post.find(params[:id])
-    @like = @post.likes.new(user: current_user)
-    if @like.save
-      redirect_to @post
-    else
-      # Handle like creation error
-    end
-  end
-
+  
   private
-
+  
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :text)
   end
 end
