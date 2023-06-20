@@ -1,1 +1,36 @@
-<h1>Placeholder text for index</h1>
+<%= render partial: "users/user_profile", locals: { user: @user } %>
+<% if @posts.any? %>
+  <ul class="index-users-ul">
+    <% @posts.each_with_index do |post, index| %>
+      <li class="users-card-item three-links">
+        <%= link_to user_post_path(user_id: @user.id, id: post.id) do %>
+          <h3 class="post-t <%= index.even? ? 'even' : '' %>">Post #<%= "#{index + 1}" %></h3>
+          <p class="said"> &#128394;&#65039 <%= post.text %> Styling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions first . Note: Ignore login logic, you would be using Devise in coming milestone</p>
+          <p class="likes"> &#129300comments: <%= post.comments_counter %>, &#10084;&#65039Likes: <%= post.likes_counter %></p>
+        <% end %>
+      </li>
+      <div class="comments">
+      <h4>Comments:</h4>
+      <% if post.comments.any? %>
+        <ul>
+          <% post.recent_comments.each_with_index do |comment, index| %>
+            <li>
+              <% user = User.find_by(id: comment.author_id) %>
+              <p><%= user.name %>: <span class="com"><%= comment.text %></span></p>
+            </li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>No comments yeto.</p>
+      <% end %>
+    </div>
+    <% end %>
+    <div class="btn-c">
+    <li class="button">
+        <h3>Pagination</h3>
+    </li>
+    </div>
+  </ul>
+<% else %>
+  <p>No posts found.</p>
+<% end %>

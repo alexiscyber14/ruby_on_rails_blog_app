@@ -1,0 +1,19 @@
+<ul class="index-users-ul">
+      <li class="users-card-item bio">
+        <div class="inner-border even">
+          <div class="profile-img even">
+            <%= image_tag(user.photo, alt: "User profile photo.", class: "display-photo") %>
+          </div>
+        </div>
+        <div class="user-name even %>">
+        <h2><%=user.name%></h2>
+        </div>
+        <div class="post-num">
+        <p class="para even"><span>Number of posts:  <%= user.posts_counter %> </p>
+        </div>
+      </li>
+      <div class="user-bio">
+      <h3>Bio &#128515</h3>
+      <p>&#128214 <%=user.bio%></p>
+      </div>
+</ul>

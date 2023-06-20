@@ -13,3 +13,287 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(242, 242, 242);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.index-users-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-users-ul .users-card-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  background: linear-gradient(to right, rgb(242, 242, 242), rgba(255, 255, 255, 0.89), white, white, white, white, white, white, white, white, white, white, white, white);
+  margin-top: 2%;
+  overflow: hidden;
+  padding: 0%;
+  border-radius: 3px;
+  border-bottom-right-radius: 160px;
+}
+
+.index-users-ul .users-card-item .inner-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 360px;
+}
+
+.index-users-ul .users-card-item .inner-border .profile-img {
+  border-radius: 50%;
+  border: 2px solid #999;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.index-users-ul .users-card-item .inner-border.even {
+  border-right: 2px solid #00d400;
+}
+
+.index-users-ul .users-card-item .inner-border:not(.even) {
+  border-right: 2px solid #ff00d0;
+}
+
+.index-users-ul .users-card-item .inner-border .profile-img.even {
+  border-color: #00d400; /* Red border for even items */
+}
+
+.index-users-ul .users-card-item .inner-border .profile-img:not(.even) {
+  border-color: #ff00d0; /* Blue border for odd items */
+}
+
+.index-users-ul .users-card-item .user-name {
+  margin-left: 20px;
+}
+
+.index-users-ul .users-card-item .user-name.even {
+  color: #00d400;
+}
+
+.index-users-ul .users-card-item .user-name:not(.even) {
+  color: #ff00d0;
+}
+
+.index-users-ul .users-card-item .user-name h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-users-ul .users-card-item .post-num {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  bottom: 0;
+  margin-right: 10%;
+  padding-top: 40%;
+}
+
+.index-users-ul .user-bio p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 3px;
+  width: 60%;
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.index-users-ul .comments p {
+  margin: 0;
+  font-size: 16px;
+  color: #212121;
+  margin-top: 0.9%;
+}
+
+.index-users-ul .users-card-item .post-num p {
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.index-users-ul .comments p span {
+  font-size: 14px;
+  color: rgb(24, 24, 24);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-users-ul .users-card-item .post-num p span {
+  font-size: 20px;
+}
+
+.index-users-ul .users-card-item .post-num .para.even {
+  color: #00d400;
+  border-left: 2px solid  #00d400;
+  border-right: 2px solid  #00d400;
+}
+
+.index-users-ul .users-card-item .post-num .para:not(.even) {
+  border-left: 2px solid #ff00d0;
+  border-right: 2px solid #ff00d0;
+  color: #ff00d0;
+}
+
+.index-users-ul .bio {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 160px;
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.index-users-ul .user-bio {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 2%;
+}
+
+.index-users-ul .user-bio h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 3px;
+  font-size: 20px;
+}
+
+.index-users-ul .three-links {
+  border-radius: 0;
+  width: 98%;
+  position: relative;
+  margin-top: 1%;
+  background: linear-gradient(to right, white, white);
+  padding-left: 2%;
+}
+
+.index-users-ul .three-links h3 {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.index-users-ul .three-links h3.even {
+  color: #00d400;
+}
+
+.index-users-ul .button h3 {
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-users-ul .post-h h3 {
+  margin: 0;
+  width: 100%;
+}
+
+.index-users-ul .three-links h3:not(.even) {
+  color: #ff00d0;
+}
+
+.index-users-ul .three-links .said {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #434343;
+  width: 97%;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.index-users-ul .btn-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.index-users-ul .button {
+  background-color: rgb(148, 148, 148);
+  width: 20%;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 3%;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  padding: 0.5% 2%;
+  box-shadow: 2px 2px 8px rgb(211, 211, 211);
+}
+
+.index-users-ul .three-links .likes {
+  margin-right: 5%;
+  padding: 0% 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  text-align: right;
+  color: purple;
+}
+
+.index-users-ul .comments {
+  background-color: white;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-left: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px;
+  padding-bottom: 20px;
+}
+
+.index-users-ul .comments h4 {
+  margin: 0;
+  font-size: 13px;
+  color: #595959;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.index-users-ul .ups {
+  margin-top: 0;
+}
+
+.index-users-ul .post-h {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.3% 0%;
+}
+
+.index-users-ul .post-h .head-t {
+  margin-right: 0;
+  text-align: right;
+  padding-right: 5%;
+}
+
+.index-users-ul .ups .said-two {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #434343;
+  width: 97%;
+  font-size: 15px;
+}
