@@ -40,6 +40,7 @@ li {
   align-items: center;
   background: linear-gradient(to right, rgb(242, 242, 242), rgba(255, 255, 255, 0.89), white, white, white, white, white, white, white, white, white, white, white, white);
   margin-top: 2%;
+  width: 100%;
   overflow: hidden;
   padding: 0%;
   border-radius: 3px;
@@ -183,10 +184,16 @@ li {
 .index-users-ul .three-links {
   border-radius: 0;
   width: 98%;
+  display: flex;
   position: relative;
   margin-top: 1%;
   background: linear-gradient(to right, white, white);
   padding-left: 2%;
+}
+
+.index-users-ul .three-links .said-m {
+  width: 100%;
+  background-color: red;
 }
 
 .index-users-ul .three-links h3 {
@@ -215,12 +222,13 @@ li {
   color: #ff00d0;
 }
 
-.index-users-ul .three-links .said {
+.index-users-ul .three-links p.said {
   font-family: Arial, Helvetica, sans-serif;
   color: #434343;
   width: 97%;
   font-size: 15px;
   overflow: hidden;
+  flex-grow: 1;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Number of lines to show */
