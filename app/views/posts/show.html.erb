@@ -5,9 +5,10 @@
 <h3 class="head"> Post #<%= @post.id%> by <%= @post.author.name %></h3>
 <h3 class="head-t">&#129300comments:<%= @post.comments_counter %>, &#10084;&#65039Likes: <%= @post.likes_counter %></h3>
 </div>
+<%= button_to 'Like Post', user_post_likes_path(@user, @post), method: :post, class: 'like_post_btn'%>
 </li>
 <li class="users-card-item three-links ups">
-<p class="said-two"> &#128394;&#65039 <%= @post.text %> Styling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions firstStyling is nice to have but focus on making sure everything functions first . Note: Ignore login logic, you would be using Devise in coming milestone</p>
+<p class="said-two"> &#128394;&#65039 <%= @post.text %></p>
 </li>
 <div class="comments">
 <h4>Comments:</h4>
@@ -24,7 +25,7 @@
   <p>No comments yet.</p>
 <% end %>
 </div>
-
+<%= render 'comments/form' %>
 </ul>
 
 
