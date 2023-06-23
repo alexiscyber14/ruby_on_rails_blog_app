@@ -10,18 +10,18 @@ RSpec.describe UsersController, type: :request do
       expect(response).to render_template(:index)
     end
   end
-  
+
   describe 'GET show' do
     it 'renders the show template' do
-      user = User.create(name: 'John', photo: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png')
-  
-      # Stub the image_tag method
-      allow_any_instance_of(ActionView::Helpers::AssetTagHelper).to receive(:image_tag).and_return('<img src="user_profile_photo.jpg" />')
-  
+      user = User.create(name: 'John',
+                         photo: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png')
+
+      allow_any_instance_of(ActionView::Helpers::AssetTagHelper)
+        .to receive(:image_tag).and_return('<img src="user_profile_photo.jpg" />')
+
       get user_path(user)
       expect(response).to have_http_status(:success)
       expect(response).to render_template(:show)
     end
   end
-  
 end

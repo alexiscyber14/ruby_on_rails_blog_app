@@ -15,7 +15,6 @@ RSpec.describe PostsController, type: :request do
       get user_post_path(user_id: post.author_id, id: post.id)
       expect(response).to have_http_status(:success)
       expect(response).to render_template(:show)
-      #expect(response.body).to include('User posts')
     end
   end
 end
