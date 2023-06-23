@@ -4,7 +4,7 @@
       <li class="users-card-item">
         <div class="inner-border <%= index.even? ? 'even' : '' %>">
           <div class="profile-img <%= index.even? ? 'even' : '' %>">
-            <%= image_tag(user.photo, alt: "User profile photo.", class: "display-photo") %>
+            <%= image_tag(user.photo, alt: "User profile photo.",) %>
           </div>
         </div>
         <div class="user-name <%= index.even? ? 'even' : '' %>">

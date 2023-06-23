@@ -6,13 +6,13 @@ describe Like, type: :model do
     let(:post) { Post.create(author: user, title: 'Hello', text: 'This is my first post') }
 
     subject do
-      Like.new(author: user, post:)
+      Like.new(author_id: user.id, post_id: post.id)
     end
 
     before { subject.save }
 
-    it 'should not have a blank title' do
-      subject.created_at = nil
+    it 'should not have a blank author_id' do
+      subject.author_id = nil
       expect(subject).to be_invalid
     end
   end
