@@ -67,6 +67,11 @@ li {
   margin-top: 8px;
 }
 
+.index-users-ul .users-card-item .inner-border .profile-img img {
+  width: 100%;
+  height: 110px;
+}
+
 .index-users-ul .users-card-item .inner-border.even {
   border-right: 2px solid #00d400;
 }
@@ -193,7 +198,6 @@ li {
 
 .index-users-ul .three-links .said-m {
   width: 100%;
-  background-color: red;
 }
 
 .index-users-ul .three-links h3 {
