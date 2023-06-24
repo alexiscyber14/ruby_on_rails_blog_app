@@ -3,40 +3,21 @@ require 'rails_helper'
 RSpec.describe 'GET users#show', type: :feature do
   before(:each) do
     @users = [
-      User.create(
-        name: 'Tom',
-        photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-        bio: 'Teacher from Mexico.',
-        posts_counter: 2
-      ),
-      User.create(
-        name: 'Lilly',
-        photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-        bio: 'Teacher from Poland.',
-        posts_counter: 5
-      )
+      User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.',
+                  posts_counter: 2),
+      User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.',
+                  posts_counter: 5)
     ]
 
     @posts = [
-      Post.create(
-        author: @users.first,
-        title: 'Hello',
-        text: 'This is my first post'
-      ),
-      Post.create(
-        author: @users.first,
-        title: 'Hello',
-        text: 'This is my second post'
-      ),
-      Post.create(
-        author: @users.first,
-        title: 'Hello',
-        text: 'This is my third post'
-      )
+      Post.create(author: @users.first, title: 'Hello', text: 'This is my first post'),
+      Post.create(author: @users.first, title: 'Hello', text: 'This is my second post'),
+      Post.create(author: @users.first, title: 'Hello', text: 'This is my third post')
     ]
 
     visit user_path(@users.first)
   end
+
 
   describe 'User visits show page and sees user info' do
     it "displays user's profile picture" do
