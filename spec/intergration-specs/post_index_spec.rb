@@ -21,7 +21,6 @@ RSpec.describe 'post#index', type: :feature do
     visit user_posts_path(@users.first)
   end
 
-
   describe 'User post index page' do
     it "displays user's profile picture" do
       @users.each do |user|
@@ -65,7 +64,6 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
-
     it 'should display how many likes a post has' do
       @posts.each do |post|
         expect(page).to have_content "Likes: #{post.likes_counter}"
@@ -76,7 +74,6 @@ RSpec.describe 'post#index', type: :feature do
       expect(page).to have_content('Pagination')
     end
   end
-
 
   it 'should redirect to the post details page' do
     expect(page).to have_link(href: user_post_path(user_id: @users.first.id, id: @posts.first.id))
