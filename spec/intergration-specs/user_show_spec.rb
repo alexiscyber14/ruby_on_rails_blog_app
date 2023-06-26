@@ -18,7 +18,6 @@ RSpec.describe 'GET users#show', type: :feature do
     visit user_path(@users.first)
   end
 
-
   describe 'User visits show page and sees user info' do
     it "displays user's profile picture" do
       expect(page).to have_css("img[src='#{@users.first.photo}']")
