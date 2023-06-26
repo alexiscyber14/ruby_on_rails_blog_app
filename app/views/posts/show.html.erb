@@ -2,7 +2,7 @@
 <ul class="index-users-ul">
 <li class="users-card-item three-links">
 <div class="post-h">
-<h3 class="head"> Post #<%= @post.id%> by <%= @post.author.name %></h3>
+<h3 class="head"><%= @post.title %> #<%= @post.id%> by <%= @post.author.name %></h3>
 <h3 class="head-t">&#129300comments:<%= @post.comments_counter %>, &#10084;&#65039Likes: <%= @post.likes_counter %></h3>
 </div>
 <%= button_to 'Like Post', user_post_likes_path(@user, @post), method: :post, class: 'like_post_btn'%>
