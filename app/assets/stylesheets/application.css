@@ -353,3 +353,54 @@ li {
   font-size: 30px;
   margin-top: 2px;
 }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  position: absolute;
+  left: 30%;
+  background-color: white;
+  width: 50%;
+  top: 10%;
+  box-shadow: 2px 2px 8px grey;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.login-form form .field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form form .field input {
+  width: 90%;
+  padding: 1%;
+  margin: 2%;
+}
+
+.login-form .field textarea {
+  width: 92%;
+  height: 20vh;
+}
+
+.login-form form .actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form form .actions input {
+  width: 90%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
