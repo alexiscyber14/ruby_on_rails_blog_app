@@ -387,9 +387,9 @@ li {
   margin: 2%;
 }
 
-.login-form .field textarea{
+.login-form .field textarea {
   width: 92%;
-  height:20VH;
+  height: 20vh;
 }
 
 .login-form form .actions {
