@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def new
     @post = Post.new
   end
@@ -24,6 +25,15 @@ class PostsController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    post = current_user.posts.find(params[:id])
+    post.destroy
+    current_user.decrement!(:posts_counter)
+
+    redirect_to user_posts_path(current_user), notice: 'Successfully removed post'
+  end
+
 
   private
 
