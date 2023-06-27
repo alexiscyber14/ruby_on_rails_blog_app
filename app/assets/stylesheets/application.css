@@ -361,6 +361,7 @@ li {
   text-align: left;
   position: absolute;
   left: 30%;
+  background-color: white;
   width: 50%;
   top: 10%;
   box-shadow: 2px 2px 8px grey;
@@ -382,6 +383,7 @@ li {
 
 .login-form form .field input {
   width: 90%;
+  padding: 1%;
   margin: 2%;
 }
 
