@@ -387,6 +387,11 @@ li {
   margin: 2%;
 }
 
+.login-form .field textarea{
+  width: 92%;
+  height:20VH;
+}
+
 .login-form form .actions {
   width: 100%;
   display: flex;
