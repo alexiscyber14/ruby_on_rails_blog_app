@@ -1,6 +1,5 @@
 <%= render partial: "user_profile", locals: { user: @user } %>
 <ul>
-<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 </ul>
 <% if @posts.any? %>
   <ul class="index-users-ul">
