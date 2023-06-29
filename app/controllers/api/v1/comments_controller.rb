@@ -2,7 +2,7 @@ module Api
   module V1
     class CommentsController < ApplicationController
       before_action :authenticate_user!
-      before_action :set_post, only: [:index, :create]
+      before_action :set_post, only: %i[index create]
 
       def index
         comments = @post.comments
