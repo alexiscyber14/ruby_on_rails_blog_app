@@ -1,13 +1,12 @@
 module Api
   module V1
-    class PostsController < ApplicationController
-      before_action :authenticate_user!
+    class UsersController < ApplicationController
+      skip_before_action :authenticate_user!
 
       def index
-        user = User.find(params[:user_id])
-        posts = user.posts
+        users = User.all
 
-        render json: posts
+        render json: users
       end
     end
   end
