@@ -116,6 +116,11 @@ rspec spec
 - LinkedIn:[@Alex_Ssenyoondo](https://www.linkedin.com/in/alex-software/)
 - wellfound:[@alexiscyber14](https://angel.co/u/alexander-senyondo)
 
+👤 **Samson**
+
+- GitHub: [@SamTush](https://github.com/SamTush)
+- LinkedIn:[@SamTush](https://www.linkedin.com/in/samsontush/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 
